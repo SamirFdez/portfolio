@@ -3,9 +3,10 @@
 ----------------------------------------------------------------*/
 
 :root {
-  --primaryColor: #b2d9f7;
-  --secundaryColor: #487aa1;
-  --thirdColor : #3d3c3b;
+  --primaryColor: #487AA1;
+  --secundaryColor: #B2D9F7;
+  --thirdColor: #3d3c3b;
+  --fourthColor: #FFFFFFF;
 }
 
 /*--------------------------------------------------------------
@@ -14,7 +15,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: var(--primaryColor) !important;
+  background: rgb(72,122,161) !important;
+  background: linear-gradient(188deg, rgba(72,122,161,1) 20%, rgba(178,217,247,1) 100%) !important;
   color: #212529;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 .navLink:hover {
-  color: #3d3c3b !important;
+  color: var(--thirdColor) !important;
 }
 
 .btnResume {
@@ -64,18 +66,18 @@ body {
 }
 
 .btnResume:hover {
-  background-color: var(--secundaryColor) !important;
-  color: white !important;
+  background-color: var(--thirdColor) !important;
+  border-color: var(--thirdColor) !important;
+  color: var(--secundaryColor) !important;
 }
 
 /*--------------------------------------------------------------
->>> Hero
+>>> Hero // Home
 ----------------------------------------------------------------*/
 
 .hero {
   width: 100%;
-  height: 70vh;
-  background: var(--primaryColor);
+  height: 60vh;
   border-bottom: 2px solid #fcebe3;
   margin: 50px 0 50px 0;
 }
@@ -89,20 +91,21 @@ body {
 }
 
 .hero h2 {
-  color: gray;
-  font-size: 48px;
+  color: #FFFFFF;
+  font-size: 46px;
 }
 
 .hero h3 {
   color: var(--secundaryColor);
-  font-size: 36px;
+  font-size: 28px;
+  text-wrap: wrap;
+  margin: 20px 0 20px 0;
 }
 
 .hero h4 {
   color: var(--secundaryColor);
   font-size: 28px;
-  text-wrap: balance;
-  margin: 20px 0 20px 0;
+
 }
 
 .hero .btn-get-started {
@@ -119,11 +122,14 @@ body {
   background: #eb5d1e;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .hero {
-    height: 100vh;
+    height: 80vh;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 767px) {
   .hero h1 {
     font-size: 48px;
   }
@@ -137,6 +143,27 @@ body {
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 449px) {
+  .hero {
+    height: 90vh;
+    margin: auto;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+  .hero h3 {
+    font-size: 22px;
+  }
+  .hero h4 {
+    font-size: 20px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 >>> Footer
 ----------------------------------------------------------------*/
@@ -145,7 +172,7 @@ body {
   margin-top: auto;
   color: #000000;
   justify-content: center;
-  background-color: var(--primaryColor);
+  background-color: transparent;
 }
 
 .textFooter {

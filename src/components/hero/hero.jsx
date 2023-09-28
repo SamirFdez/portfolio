@@ -1,15 +1,25 @@
 import React from 'react'
 import TypewriterComponent from 'typewriter-effect'
+import { useLottie } from 'lottie-react';
+import Animation from "../../assets/images/animation.json";
 
 export const Hero = () => {
+
+    const options = {
+        animationData: Animation,
+        loop: true
+      };
+    
+      const { View } = useLottie(options);
+
   return (
     <section class="d-flex align-items-center hero" id="home">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1">
-                    <h3>
+                <div class="col-xl-6 pt-5 pt-xl-0 order-2 order-lg-2">
+                    <h4>
                         Hi, my name is
-                    </h3>
+                    </h4>
                     <h1>
                         Samir Fernández
                     </h1>
@@ -20,21 +30,20 @@ export const Hero = () => {
                             loop: true,
                             delay: 160,
                             strings: [
-                                "I build things for the web", 
                                 "I am a web developer",
-                                
-                            
-                            ],
+                                "I build things for the web"
+                                ],
                             }}
                         />
                     </h2>
-                    <h4>
+                    <h3>
                         I'm a front-end software engineer passionate about turning ideas into lines
                         of code and creating functional, accessible and useful web applications.
-                    </h4>
+                    </h3>
                 </div>
                 
-                <div class="col-lg-5 order-1 order-lg-2 hero-img">
+                <div class="col-xl-6 order-1 order-xl-2 hero-img">
+                    {View}
 
                 </div>
             </div>
