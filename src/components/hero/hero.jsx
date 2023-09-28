@@ -2,6 +2,8 @@ import React from 'react'
 import TypewriterComponent from 'typewriter-effect'
 import { useLottie } from 'lottie-react';
 import Animation from "../../assets/images/animation.json";
+import iconGithub from '../../assets/images/iconGithub.png'
+import linkedin from '../../assets/images/linkedin.png'
 
 export const Hero = () => {
 
@@ -40,11 +42,18 @@ export const Hero = () => {
                         I'm a front-end software engineer passionate about turning ideas into lines
                         of code and creating functional, accessible and useful web applications.
                     </h3>
+                    <div>
+                        <a href="https://github.com/SamirFdez" target="_blank" rel="noopener noreferrer">
+                            <img src={iconGithub} className="imgIcon"/>
+                        </a>
+                        <a className="ms-4" href="https://www.linkedin.com/in/samir-fern%C3%A1ndez-953222188/" target="_blank" rel="noopener noreferrer">
+                            <img src={linkedin} className="imgIcon"/>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="col-xl-6 order-1 order-xl-2 hero-img">
                     {View}
-
                 </div>
             </div>
         </div>

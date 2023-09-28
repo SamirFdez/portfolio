@@ -6,7 +6,7 @@
   --primaryColor: #487AA1;
   --secundaryColor: #B2D9F7;
   --thirdColor: #3d3c3b;
-  --fourthColor: #FFFFFFF;
+  --fourthColor: #FFFFFF;
 }
 
 /*--------------------------------------------------------------
@@ -15,9 +15,10 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: rgb(72,122,161) !important;
-  background: linear-gradient(188deg, rgba(72,122,161,1) 20%, rgba(178,217,247,1) 100%) !important;
   color: #212529;
+  background: rgb(72, 122, 161) !important;
+  background: linear-gradient(188deg, rgba(72, 122, 161, 1) 20%, rgba(178, 217, 247, 1) 100%) !important;
+  background-attachment: fixed !important;
 }
 
 /*--------------------------------------------------------------
@@ -36,6 +37,7 @@ body {
 
 .Navbar {
   background-color: var(--primaryColor);
+  display: block !important;
 }
 
 .NavbarBrand {
@@ -58,6 +60,7 @@ body {
 
 .navLink:hover {
   color: var(--thirdColor) !important;
+  transform: scale(1.05);
 }
 
 .btnResume {
@@ -68,7 +71,7 @@ body {
 .btnResume:hover {
   background-color: var(--thirdColor) !important;
   border-color: var(--thirdColor) !important;
-  color: var(--secundaryColor) !important;
+  color: var(--fourthColor) !important;
 }
 
 /*--------------------------------------------------------------
@@ -77,9 +80,8 @@ body {
 
 .hero {
   width: 100%;
-  height: 60vh;
-  border-bottom: 2px solid #fcebe3;
-  margin: 50px 0 50px 0;
+  height: 80vh;
+  margin: 0 0 0 0;
 }
 
 .hero h1 {
@@ -96,7 +98,7 @@ body {
 }
 
 .hero h3 {
-  color: var(--secundaryColor);
+  color: var(--thirdColor);
   font-size: 28px;
   text-wrap: wrap;
   margin: 20px 0 20px 0;
@@ -108,24 +110,9 @@ body {
 
 }
 
-.hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #eb5d1e;
-}
-
 @media screen and (max-width: 1200px) {
   .hero {
-    height: 80vh;
-    margin: auto;
+    height: 100vh;
   }
 }
 
@@ -133,12 +120,15 @@ body {
   .hero h1 {
     font-size: 48px;
   }
+
   .hero h2 {
     font-size: 36px;
   }
+
   .hero h3 {
     font-size: 24px;
   }
+
   .hero h4 {
     font-size: 20px;
   }
@@ -146,23 +136,57 @@ body {
 
 @media screen and (max-width: 449px) {
   .hero {
-    height: 90vh;
-    margin: auto;
+    height: 100vh;
   }
+
   .hero h1 {
     font-size: 42px;
   }
+
   .hero h2 {
     font-size: 30px;
   }
+
   .hero h3 {
     font-size: 22px;
   }
+
   .hero h4 {
     font-size: 20px;
   }
 }
 
+.imgIcon {
+  width: 2em;
+}
+
+.imgIcon:hover {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+>>> Contact
+----------------------------------------------------------------*/
+
+.contact {
+  width: 100%;
+  height: 80vh;
+  border-bottom: 2px solid #fcebe3;
+  margin: 0 0 40px 0;
+  justify-content: center;
+}
+
+.boxContact {
+  width: 32em;
+  height: 38em;
+  background-color: var(--fourthColor);
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    height: 100vh;
+  }
+}
 
 /*--------------------------------------------------------------
 >>> Footer
