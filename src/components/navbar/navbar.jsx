@@ -26,7 +26,12 @@ export const NavbarMenu = () => {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto Nav">
-              <Nav.Link className="navLink">About</Nav.Link>
+              <Nav.Link
+                className="navLink"
+                onClick={() => handleNavLinkClick("about")}
+              >
+                About
+              </Nav.Link>
               <Nav.Link className="navLink">Experience</Nav.Link>
               <Nav.Link className="navLink">Projects</Nav.Link>
               <Nav.Link className="navLink">DevTools</Nav.Link>
