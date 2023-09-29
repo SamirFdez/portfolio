@@ -179,7 +179,20 @@ body {
 .boxContact {
   width: 32em;
   height: 38em;
-  background-color: var(--fourthColor);
+  backdrop-filter: blur(8px) !important;
+}
+
+.boxContact h1 {
+  font-size: 2.6em !important;
+  font-weight: 500;
+  color: var(--fourthColor);
+  margin: 1em 0 0 0;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formContact {
+  padding: 2em;
 }
 
 @media screen and (max-width: 1200px) {
