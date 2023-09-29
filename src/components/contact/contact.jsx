@@ -20,14 +20,14 @@ export const Contact = () => {
     <>
       <section className="d-flex align-items-center contact" id="contact">
         <div className="container d-flex justify-content-center">
-          <div className="boxContact rounded shadow justify-content-center">
+          <div className="boxContact rounded shadow">
             <h1>Want to get in touch?</h1>
             <Form
               noValidate
               validated={validated}
               onSubmit={handleSubmit}
               autoComplete="off"
-              className="formContact "
+              className="formContact"
             >
               {contactInputs.map((input, index) => (
                 <FloatingLabel
@@ -45,13 +45,13 @@ export const Contact = () => {
                   />
                 </FloatingLabel>
               ))}
-              <div>
+              <div className="text-center">
                 <Button
                   variant="outline-dark"
                   className="btnSubmit"
                   type="submit"
                 >
-                  Resume
+                  Submit
                 </Button>
               </div>
             </Form>

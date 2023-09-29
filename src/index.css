@@ -179,7 +179,7 @@ body {
 .boxContact {
   width: 32em;
   height: 38em;
-  backdrop-filter: blur(8px) !important;
+  background-color: rgba(72, 122, 161, 0.3);
 }
 
 .boxContact h1 {
@@ -193,6 +193,20 @@ body {
 
 .formContact {
   padding: 2em;
+}
+
+.btnSubmit {
+  font-size: 1.15em !important;
+  color: var(--primaryColor) !important;
+  border-color: var(--secundaryColor) !important;
+  background-color: var(--secundaryColor) !important;
+  padding: 10px 40px !important;
+}
+
+.btnSubmit:hover {
+  background-color: var(--primaryColor) !important;
+  border-color: var(--primaryColor) !important;
+  color: var(--fourthColor) !important;
 }
 
 @media screen and (max-width: 1200px) {
