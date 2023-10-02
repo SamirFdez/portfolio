@@ -3,6 +3,7 @@ import "./App.css";
 import { NavbarMenu } from "./components/navbar/navbar";
 import { Hero } from "./components/hero/hero";
 import { About } from "./components/about/about";
+import { Experience } from "./components/experience/experience";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
 import AOS from "aos";
@@ -10,7 +11,9 @@ import AOS from "aos";
 function App() {
 
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ 
+      duration: 1500
+    });
   }, []);
 
   return (
@@ -19,6 +22,7 @@ function App() {
         <NavbarMenu />
         <Hero />
         <About/>
+        <Experience/>
         <Contact />
         <Footer />
       </div>
