@@ -17,7 +17,7 @@ export const Footer = () => {
             </div>
 
             <ul className="nav col-12 justify-content-center list-unstyled d-flex">
-              <li className="ms-3">
+              <li>
                 <a
                   href="https://portfolio-samirfdez.vercel.app/"
                   target="_blank"
