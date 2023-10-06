@@ -18,7 +18,7 @@ export const education = [
 
 export const experience = [
   {
-    position: "Junior Front-end Developer",
+    position: "Frontend Developer",
     year: "2023-present",
     empresa: "Signos Framework",
     responsibilities: [
@@ -29,7 +29,7 @@ export const experience = [
     ],
   },
   {
-    position: "Freelance Developer",
+    position: "Freelance Web Developer",
     year: "2021-2022",
     empresa: "",
     responsibilities: [
