@@ -1,5 +1,5 @@
 import React from "react";
-import AboutPhoto from "../../assets/images/aboutPhoto.jpeg";
+import AboutPhoto from "../../assets/images/aboutPhoto.jpg";
 
 export const About = () => {
   return (
@@ -28,7 +28,7 @@ export const About = () => {
               </div>
             </div>
             <div className="col-xl-6 order-2 order-xl-2 text-center">
-              <img src={AboutPhoto} className="AboutPhoto" />
+              <img src={AboutPhoto} className="aboutPhoto" />
             </div>
           </div>
         </div>
