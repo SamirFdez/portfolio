@@ -3,7 +3,7 @@ import "./App.css";
 import { NavbarMenu } from "./components/navbar/navbar";
 import { Hero } from "./components/hero/hero";
 import { About } from "./components/about/about";
-import { Experience } from "./components/experience/experience";
+import { ExperienceContent } from "./components/experience/experienceContent";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
 import AOS from "aos";
@@ -22,7 +22,7 @@ function App() {
         <NavbarMenu />
         <Hero />
         <About/>
-        <Experience/>
+        <ExperienceContent/>
         <Contact />
         <Footer />
       </div>

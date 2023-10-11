@@ -1,57 +1,63 @@
-import React from 'react'
+import React from "react";
+import { experienceArray } from "../../configs/experience.config";
 
 export const Experience = () => {
+
   return (
     <>
-<section className="d-flex align-items-center experience" id="experience">
-  <div className="container">
+      <h2> Experience </h2>
+      <div className="row d-flex">
+        <div className="col-xl-4" >
+          <ul className="timeline">
+            {experienceArray.slice(0, 2).map((exp, index) => (
+              <li key={index} className="timeline-item mb-5">
+                <h5 className="fw-bold">{exp.position}</h5>
+                <h6 className="text-white">{exp.company}</h6>
+                <p className="text-muted mb-2 fw-bold">{exp.time}</p>
+                {exp.responsibilities.map((tasks, index) => (
+                  <p key={index} className="mb-1" style={{ margin: "0px" }}>
+                    • {tasks}
+                  </p>
+                ))}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-  <h2> Education </h2>
+        <div className="col-xl-4" data-aos="fade-down">
+          <ul className="timeline">
+            {experienceArray.slice(2, 4).map((exp, index) => (
+              <li key={index} className="timeline-item mb-5">
+                <h5 className="fw-bold">{exp.position}</h5>
+                <h6 className="text-white">{exp.company}</h6>
+                <p className="text-muted mb-2 fw-bold">{exp.time}</p>
+                {exp.responsibilities.map((tasks, index) => (
+                  <p key={index} className="mb-1" style={{ margin: "0px" }}>
+                    • {tasks}
+                  </p>
+                ))}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-    <div className="row">
-      <div className="col-12">
-        <div className="apland-timeline-area">
-          <div className="single-timeline-area">
-            <div className="timeline-date wow fadeInLeft" data-wow-delay="0.1s">
-              <p>Near Future</p>
-            </div>
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-4">
-                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s">
-                  <div className="timeline-icon"><i className="fa fa-address-card" aria-hidden="true"></i></div>
-                  <div className="timeline-text">
-                    <h6>Updated 5.0</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4">
-                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s">
-                  <div className="timeline-icon"><i className="fa fa-archive" aria-hidden="true"></i></div>
-                  <div className="timeline-text">
-                    <h6>Fixed bug</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-md-6 col-lg-4">
-                <div className="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s">
-                  <div className="timeline-icon"><i className="fa fa-address-book" aria-hidden="true"></i></div>
-                  <div className="timeline-text">
-                    <h6>Reach 1k Users</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="col-xl-4" data-aos="fade-down">
+          <ul className="timeline">
+            {experienceArray.slice(4, 5).map((exp, index) => (
+              <li key={index} className="timeline-item mb-5">
+                <h5 className="fw-bold">{exp.position}</h5>
+                <h6 className="text-white">{exp.company}</h6>
+                <p className="text-muted mb-2 fw-bold">{exp.time}</p>
+                {exp.responsibilities.map((tasks, index) => (
+                  <p key={index} className="mb-1" style={{ margin: "0px" }}>
+                    • {tasks}
+                  </p>
+                ))}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
     </>
-  )
-}
-
-// d-flex align-items-center
+  );
+};

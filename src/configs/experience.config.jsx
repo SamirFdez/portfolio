@@ -1,26 +1,26 @@
-export const education = [
+export const educationArray = [
   {
     institution: "Universidad APEC",
     course: "Ingeniería en Software",
-    year: "2018-present",
+    time: "2019 - present",
   },
   {
     institution: "Instituto Tecnológico de Las Américas",
     course: "Tecnólogo en Desarrollo de Software",
-    year: "2016 - 2018",
+    time: "2016 - 2018",
   },
   {
     institution: "Instituto Politecnico Pilar Constanzo",
     course: "Technical Bachelor in Computing",
-    year: "2011-2015",
+    time: "2011 - 2015",
   },
 ];
 
-export const experience = [
+export const experienceArray = [
   {
     position: "Frontend Developer",
-    year: "2023-present",
-    empresa: "Signos Framework",
+    time: "june 2023 - present",
+    company: "Signos Framework",
     responsibilities: [
       "Web systems design and coding",
       "Performance improvement",
@@ -30,8 +30,8 @@ export const experience = [
   },
   {
     position: "Freelance Web Developer",
-    year: "2021-2022",
-    empresa: "",
+    time: "january 2022 - february 2023",
+    company: "",
     responsibilities: [
       "Creation of landing pages for businesses",
       "Website remodeling",
@@ -40,17 +40,17 @@ export const experience = [
   },
   {
     position: "Developer",
-    year: "2020 - 2021",
-    empresa: "recursosdigitalesrde.org",
+    time: "january 2021 - december 2021",
+    company: "Recursos Digitales RDE",
     responsibilities: [
       "Creation of digital resources",
       "Schedule textbook activities to dynamic content",
     ],
   },
   {
-    position: "Computer Technician",
-    year: "2018-2020",
-    empresa: "ISFODOSU",
+    position: "Support / Technician",
+    time: "octuber 2015 - december 2020",
+    company: "ISFODOSU",
     responsibilities: [
       "Assist department staff",
       "Manage student database",
@@ -59,8 +59,8 @@ export const experience = [
   },
   {
     position: "Computer Technician",
-    year: "2015",
-    empresa: "Grupo Viamar",
+    time: "august 2015 - octuber 2015",
+    company: "Grupo Viamar",
     responsibilities: [
       "Fix and replace hardware to all kinds of computers",
       "Provide functional and technical support",
