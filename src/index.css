@@ -277,6 +277,10 @@ body {
   margin-bottom: 16px;
 }
 
+.card {
+  background-color: rgba(178, 217, 247) !important;
+}
+
 .card:hover {
   transform: scale(1.02);
 }

@@ -15,23 +15,23 @@ export const projectsArray = [
       "App that allows you to organize and manage your tasks efficiently. Record your pending tasks, mark completed tasks and maintain full control of your daily activities.",
     stacks: [
       {
-        name: "react",
+        name: "React",
         icon: reactJs,
       },
       {
-        name: "js",
+        name: "JS",
         icon: js,
       },
       {
-        name: "html",
+        name: "HTML",
         icon: html,
       },
       {
-        name: "css",
+        name: "CSS",
         icon: css,
       },
       {
-        name: "bootstrap",
+        name: "Bootstrap",
         icon: bootstrap,
       },
     ],

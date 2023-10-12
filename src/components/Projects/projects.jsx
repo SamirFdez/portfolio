@@ -21,7 +21,7 @@ export const Projects = () => {
                   <Card.Img
                     variant="top"
                     src={projects.image}
-                    className="imgProject"
+                    className="imgProject p-3 pb-0"
                   />
                   <Card.Body>
                     <div className="card-title d-flex align-items-center justify-content-between">
