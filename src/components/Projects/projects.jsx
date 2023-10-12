@@ -5,7 +5,7 @@ import { projectsArray } from "../../configs/projects.config";
 export const Projects = () => {
   return (
     <>
-      <section className="d-flex align-items-center projects" id="projects">
+      <section className="d-flex align-items-center projects" data-aos="zoom-in" id="projects">
         <Container>
           <h2>Projects</h2>
           <Row>
