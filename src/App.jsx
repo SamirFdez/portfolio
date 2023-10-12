@@ -4,6 +4,7 @@ import { NavbarMenu } from "./components/navbar/navbar";
 import { Hero } from "./components/hero/hero";
 import { About } from "./components/about/about";
 import { ExperienceContent } from "./components/experience/experienceContent";
+import { Projects } from "./components/Projects/projects";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
 import AOS from "aos";
@@ -23,6 +24,7 @@ function App() {
         <Hero />
         <About/>
         <ExperienceContent/>
+        <Projects/>
         <Contact />
         <Footer />
       </div>

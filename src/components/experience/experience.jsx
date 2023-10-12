@@ -14,7 +14,7 @@ export const Experience = () => {
                 <h6 className="text-white">{exp.company}</h6>
                 <p className="text-muted mb-2 fw-bold">{exp.time}</p>
                 {exp.responsibilities.map((tasks, index) => (
-                  <p key={index} className="mb-1" style={{ margin: "0px" }}>
+                  <p key={index} className="text-muted mb-1" style={{ margin: "0px" }}>
                     • {tasks}
                   </p>
                 ))}
@@ -31,7 +31,7 @@ export const Experience = () => {
                 <h6 className="text-white">{exp.company}</h6>
                 <p className="text-muted mb-2 fw-bold">{exp.time}</p>
                 {exp.responsibilities.map((tasks, index) => (
-                  <p key={index} className="mb-1" style={{ margin: "0px" }}>
+                  <p key={index} className="text-muted mb-1" style={{ margin: "0px" }}>
                     • {tasks}
                   </p>
                 ))}

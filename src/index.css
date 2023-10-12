@@ -261,6 +261,47 @@ body {
 }
 
 /*--------------------------------------------------------------
+>>> Projects
+----------------------------------------------------------------*/
+
+.projects {
+  width: 100%;
+  height: 100vh;
+}
+
+.projects h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--thirdColor);
+  margin-bottom: 16px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.imgProject{
+  object-fit: cover;
+}
+
+.stackProject {
+  width: 1.4em;
+}
+
+.stackProject:hover {
+  width: 1.4em;
+}
+
+.iconProject {
+  width: 1.7em;
+}
+
+.iconProject:hover {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
 >>> Contact
 ----------------------------------------------------------------*/
 
