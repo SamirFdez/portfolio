@@ -4,8 +4,14 @@ import { navLinks } from "../../configs/navbar.config";
 
 export const NavbarMenu = () => {
   const [offset, setOffset] = useState(0);
+  const [expanded, setExpanded] = useState(false);
+
+  const closeNav = () => {
+    setExpanded(false);
+  };
 
   const handleNavLinkClick = (sectionId) => {
+    closeNav();
     const section = document.getElementById(sectionId);
     if (section) {
       const offsetTop = section.offsetTop - 60;
@@ -16,7 +22,12 @@ export const NavbarMenu = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="Navbar fixed-top">
+      <Navbar
+        expanded={expanded}
+        onToggle={(expanded) => setExpanded(expanded)}
+        expand="lg"
+        className="Navbar fixed-top"
+      >
         <Container>
           <Navbar.Brand href="#" className="NavbarBrand">
             Samir Fernández
@@ -38,7 +49,11 @@ export const NavbarMenu = () => {
               ))}
 
               <Nav.Link>
-                <Button variant="outline-dark" className="btnResume">
+                <Button
+                  variant="outline-dark"
+                  className="btnResume"
+                  onClick={closeNav}
+                >
                   Resume
                 </Button>
               </Nav.Link>

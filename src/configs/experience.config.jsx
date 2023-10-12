@@ -6,7 +6,7 @@ export const educationArray = [
   },
   {
     institution: "Instituto Tecnológico de Las Américas",
-    course: "Tecnólogo en Desarrollo de Software",
+    course: "Desarrollo de Software",
     time: "2016 - 2018",
   },
   {
@@ -31,7 +31,7 @@ export const experienceArray = [
   {
     position: "Freelance Web Developer",
     time: "january 2022 - february 2023",
-    company: "",
+    company: "Freelance",
     responsibilities: [
       "Creation of landing pages for businesses",
       "Website remodeling",

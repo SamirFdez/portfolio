@@ -36,7 +36,6 @@ export const Contact = () => {
               {contactInputs.map((input, index) => (
                 <FloatingLabel
                   key={`input-${index}`}
-                  controlId={input.controlId}
                   label={input.label}
                   className={input.className}
                 >

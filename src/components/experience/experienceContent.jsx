@@ -7,11 +7,15 @@ export const ExperienceContent = () => {
     <>
       <section
         className="d-flex align-items-center experience "
-        data-aos="fade-down"
         id="experience"
       >
         <div className="container">
-          <Experience/>
+          <div data-aos="fade-down">
+            <Experience />
+          </div>
+          <div data-aos="fade-up">
+            <Education />
+          </div>
         </div>
       </section>
     </>

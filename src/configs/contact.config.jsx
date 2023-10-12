@@ -1,6 +1,5 @@
 export const contactInputs = [
   {
-    controlId: "floatingInput",
     label: "Your name",
     className: "mb-4",
     type: "text",
@@ -8,7 +7,6 @@ export const contactInputs = [
     placeholder: "Your name",
   },
   {
-    controlId: "floatingInput",
     label: "Email",
     className: "mb-4",
     type: "email",
@@ -16,7 +14,6 @@ export const contactInputs = [
     placeholder: "Email",
   },
   {
-    controlId: "floatingInput",
     label: "Subject",
     className: "mb-4",
     type: "text",
@@ -25,7 +22,6 @@ export const contactInputs = [
   },
 
   {
-    controlId: "floatingTextarea",
     label: "Message",
     className: "mb-4",
     as: "textarea",
