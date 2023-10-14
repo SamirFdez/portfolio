@@ -2,10 +2,19 @@ import React from "react";
 import { useState } from "react";
 import { Form, Button, FloatingLabel } from "react-bootstrap";
 import { contactInputs } from "../../configs/contact.config";
-import AOS from "aos";
 
 export const Contact = () => {
   const [validated, setValidated] = useState(false);
+  const [contactData, setContactData] = useState({
+    name: "", 
+    email: "",
+    subject: "",
+    message: ""
+  })
+
+  const handleChange = ({ target }) => {
+    setContactData({ ...contactData, [target.name]: target.value });
+  };
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -13,7 +22,7 @@ export const Contact = () => {
       event.preventDefault();
       event.stopPropagation();
     }
-
+    event.preventDefault(event);
     setValidated(true);
   };
 
@@ -21,10 +30,7 @@ export const Contact = () => {
     <>
       <section className="d-flex align-items-center contact" id="contact">
         <div className="container d-flex justify-content-center">
-          <div
-            className="boxContact rounded shadow"
-            data-aos="zoom-in"
-          >
+          <div className="boxContact rounded shadow" data-aos="zoom-in">
             <h1>Want to get in touch?</h1>
             <Form
               noValidate
@@ -42,6 +48,7 @@ export const Contact = () => {
                   <Form.Control
                     {...input}
                     name={input.name}
+                    onChange={handleChange}
                     style={input.style ? { height: input.style } : {}}
                     placeholder={input.placeholder}
                     required

@@ -21,6 +21,16 @@ body {
   background-attachment: fixed !important;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--secundaryColor);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thirdColor);
+  border-radius: 1cqi;
+}
+
 /*--------------------------------------------------------------
 >>> App
 ----------------------------------------------------------------*/
@@ -168,7 +178,7 @@ body {
 .about {
   width: 100%;
   height: 100vh
-  /* margin: 60px 0 60px 0; */
+    /* margin: 60px 0 60px 0; */
 }
 
 .about h2 {
@@ -190,7 +200,7 @@ body {
   height: 400px;
   border: 10px outset var(--primaryColor);
   border-radius: 1em;
-  
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -215,6 +225,7 @@ body {
 /*--------------------------------------------------------------
 >>> Experience
 ----------------------------------------------------------------*/
+
 .experience {
   width: 100%;
   height: auto;
@@ -257,6 +268,7 @@ body {
   .experience {
     height: auto;
     margin-top: 48px;
+    margin-bottom: 48px;
   }
 }
 
@@ -277,15 +289,15 @@ body {
   margin-bottom: 16px;
 }
 
-.card {
+.cardProject {
   background-color: rgba(178, 217, 247) !important;
 }
 
-.card:hover {
+.cardProject:hover {
   transform: scale(1.02);
 }
 
-.imgProject{
+.imgProject {
   object-fit: cover;
 }
 
@@ -305,6 +317,91 @@ body {
 .iconProject:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1200px) {
+  .projects {
+    height: auto;
+    margin-bottom: 48px;
+  }
+}
+
+/*--------------------------------------------------------------
+>>> Skills
+----------------------------------------------------------------*/
+
+.skills {
+  width: 100%;
+  height: 100vh;
+}
+
+.skills h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--thirdColor);
+  margin-bottom: 12px;
+}
+
+.skills h3 {
+  color: var(--fourthColor);
+}
+
+.cardStacks {
+  width: 13em;
+  padding: 1em;
+  background-color: var(--thirdColor) !important;
+  color: var(--fourthColor) !important;
+}
+
+.cardStacks:hover {
+  transform: scale(1.02);
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.divIcon {
+  text-align: left;
+}
+
+.divName {
+  text-align: center;
+}
+
+.imgStacks {
+  height: 2.4em;
+}
+
+@media screen and (max-width: 1200px) {
+  .skills {
+    height: auto;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .cardStacks {
+    width: 10em;
+  }
+
+  .imgStacks {
+    height: 2.2em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cardStacks {
+    width: 10em;
+  }
+
+  .imgStacks {
+    height: 2.2em;
+  }
+}
+
 
 /*--------------------------------------------------------------
 >>> Contact
@@ -351,7 +448,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .contact {
-    height: 100vh;
+    height: auto;
     margin-top: 48px;
   }
 }
@@ -389,6 +486,10 @@ body {
 
 .iconFooter {
   width: 1.2em;
+}
+
+.iconFooter:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {

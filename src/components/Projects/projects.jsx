@@ -1,23 +1,19 @@
 import React from "react";
-import { Container, Row, Col, Card, Tooltip } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { projectsArray } from "../../configs/projects.config";
 
 export const Projects = () => {
   return (
     <>
-      <section className="d-flex align-items-center projects" data-aos="zoom-in" id="projects">
+      <section className="d-flex align-items-center projects" id="projects">
         <Container>
-          <h2>Projects</h2>
+          <div data-aos="zoom-in">
+            <h2>Projects</h2>
+          </div>
           <Row>
             {projectsArray.map((projects, index) => (
-              <Col
-                key={index}
-                xl={4}
-                md={6}
-                sm={12}
-                style={{ marginBottom: "2em" }}
-              >
-                <Card className="shadow card">
+              <Col key={index} xl={4} md={6} sm={12} className="mb-2">
+                <Card className="shadow cardProject" data-aos="zoom-in">
                   <Card.Img
                     variant="top"
                     src={projects.image}
@@ -39,27 +35,25 @@ export const Projects = () => {
                         ))}
                       </div>
                     </div>
-                    <Card.Text>
-                      <Row>
-                        <Col xs={12}>{projects.description}</Col>
-                        <Col
-                          xs={12}
-                          style={{ textAlign: "right", padding: "12px" }}
-                        >
-                          {projects.share.map((links, index) => (
-                            <a
-                              key={index}
-                              className="ms-3"
-                              href={links.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <img src={links.icon} className="iconProject" />
-                            </a>
-                          ))}
-                        </Col>
-                      </Row>
-                    </Card.Text>
+                    <Row>
+                      <Col xs={12}>{projects.description}</Col>
+                      <Col
+                        xs={12}
+                        style={{ textAlign: "right", padding: "12px" }}
+                      >
+                        {projects.share.map((links, index) => (
+                          <a
+                            key={index}
+                            className="ms-3"
+                            href={links.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={links.icon} className="iconProject" />
+                          </a>
+                        ))}
+                      </Col>
+                    </Row>
                   </Card.Body>
                 </Card>
               </Col>

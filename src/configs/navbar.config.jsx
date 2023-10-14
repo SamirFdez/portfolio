@@ -12,8 +12,8 @@ export const navLinks = [
     enlace: "projects"
   },
   {
-    name: "DevTools",
-    enlace: "devTools"
+    name: "Skills",
+    enlace: "skills"
   },
   {
     name: "Contact",

@@ -4,6 +4,7 @@ export const contactInputs = [
     className: "mb-4",
     type: "text",
     name: "name",
+    // value: contactData.name,
     placeholder: "Your name",
   },
   {
@@ -11,6 +12,7 @@ export const contactInputs = [
     className: "mb-4",
     type: "email",
     name: "email",
+    // value: contactData.email,
     placeholder: "Email",
   },
   {
@@ -18,6 +20,7 @@ export const contactInputs = [
     className: "mb-4",
     type: "text",
     name: "subject",
+    // value: contactData.subject,
     placeholder: "Subject",
   },
 
@@ -26,6 +29,7 @@ export const contactInputs = [
     className: "mb-4",
     as: "textarea",
     name: "message",
+    // value: contactData.message,
     placeholder: "Message",
     style: "150px"
   },

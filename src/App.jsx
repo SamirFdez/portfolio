@@ -5,6 +5,7 @@ import { Hero } from "./components/hero/hero";
 import { About } from "./components/about/about";
 import { ExperienceContent } from "./components/experience/experienceContent";
 import { Projects } from "./components/Projects/projects";
+import { Skills } from "./components/skills/skills";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
 import AOS from "aos";
@@ -25,6 +26,7 @@ function App() {
         <About/>
         <ExperienceContent/>
         <Projects/>
+        <Skills/>
         <Contact />
         <Footer />
       </div>
