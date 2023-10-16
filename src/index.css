@@ -469,6 +469,66 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*--------------------------------------------------------------
+>>> Back to Top
+----------------------------------------------------------------*/
+
+.to-top-icon {
+  background-color: var(--primaryColor);
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -moz-transition: background-color 0.3s, color 0.3s;
+  -ms-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.to-top-icon:hover {
+  background-color: var(--secundaryColor);
+}
+
+.imgArrowUp {
+  width: 40px;
+  filter: invert();
+  padding: 7.5px;
+}
+
+.imgArrowUp:hover {
+  filter: none;
+}
+
+@media screen and (max-width: 575px) {
+  .to-top-icon {
+    width: 35px;
+    height: 35px;
+    line-height: 25px;
+    font-size: 16px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .imgArrowUp {
+    width: 35px;
+    padding: 7.5px;
+  }
+}
+
+/*--------------------------------------------------------------
 >>> Footer
 ----------------------------------------------------------------*/
 

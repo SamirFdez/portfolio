@@ -8,6 +8,7 @@ import { Projects } from "./components/Projects/projects";
 import { Skills } from "./components/skills/skills";
 import { Contact } from "./components/contact/contact";
 import { Footer } from "./components/footer/footer";
+import { BackToTop } from "./components/backToTop/backToTop";
 import AOS from "aos";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Skills/>
         <Contact />
         <Footer />
+        <BackToTop/>
       </div>
     </>
   );
