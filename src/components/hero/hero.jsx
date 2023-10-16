@@ -52,7 +52,7 @@ export const Hero = () => {
                 </a>
                 <a
                   className="ms-4"
-                  href="www.linkedin.com/in/samirfdez"
+                  href="https://linkedin.com/in/samirfdez"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
