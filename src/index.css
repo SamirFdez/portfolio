@@ -300,6 +300,7 @@ body::-webkit-scrollbar-thumb {
 
 .imgProject {
   object-fit: cover;
+  height: 205px !important;
 }
 
 .stackProject {
