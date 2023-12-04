@@ -16,19 +16,18 @@ export const Skills = () => {
           </div>
 
           {stacks.map((stack, index) => (
-            <>
+            <div key={index}>
               <div data-aos="zoom-in-up">
                 <Row className="mt-2">
                   <Col sm={12} className="mb-2">
                     <h3 style={{ borderBottom: "1px solid" }}>
-                      {" "}
-                      {stack.description}{" "}
+                      {stack.description}
                     </h3>
                   </Col>
                 </Row>
                 <Row className="rowStacks">
                   {stack.technologys.map((technology, index) => (
-                    <Col lg={3} md={4} sm={6} xs={6} className="mb-3">
+                    <Col lg={3} md={4} sm={6} xs={6} className="mb-3" key={index}>
                       <Card className="cardStacks">
                         <div className="cardBody">
                           <div className="divIcon">
@@ -49,7 +48,7 @@ export const Skills = () => {
                   ))}
                 </Row>
               </div>
-            </>
+            </div>
           ))}
         </Container>
       </section>

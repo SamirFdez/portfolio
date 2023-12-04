@@ -6,6 +6,7 @@ import bootstrap from "../assets/icons/bootstrap.svg";
 import iconGithub from "../assets/images/iconGithub.png";
 import iconWeb from "../assets/images/iconWeb.png";
 import todoList from "../assets/projects/todoList.jpg";
+import recursoDigitales from "../assets/projects/recursoDigitales.png"
 
 export const projectsArray = [
   {
@@ -89,19 +90,11 @@ export const projectsArray = [
     ],
   },
   {
-    name: "Todo List",
-    image: todoList,
+    name: "Recursos Digitales",
+    image: recursoDigitales,
     description:
-      "App that allows you to organize and manage your tasks efficiently. Record your pending tasks, mark completed tasks and maintain full control of your daily activities.",
+      "In this project i participated in creating digital resources to support curricular development, basically it was to transform exercises from textbooks into resources in a dynamic way.",
     stacks: [
-      {
-        name: "react",
-        icon: reactJs,
-      },
-      {
-        name: "js",
-        icon: js,
-      },
       {
         name: "html",
         icon: html,
@@ -114,19 +107,22 @@ export const projectsArray = [
         name: "bootstrap",
         icon: bootstrap,
       },
+      {
+        name: "js",
+        icon: js,
+      },
     ],
     share: [
       {
         platform: "web",
         icon: iconWeb,
-        link: "https://todolist-samirfdez.vercel.app",
+        link: "https://recursosdigitalesrde.org/",
       },
       {
         platform: "gitHub",
         icon: iconGithub,
-        link: "https://github.com/SamirFdez/todoList",
+        link: "https://github.com/SamirFdez/Programas-Interactivos-Recursos-Digitales",
       },
     ],
   },
 ];
-

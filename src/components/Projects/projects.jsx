@@ -12,7 +12,7 @@ export const Projects = () => {
           </div>
           <Row>
             {projectsArray.map((projects, index) => (
-              <Col key={index} xl={4} md={6} sm={12} className="mb-2">
+              <Col key={index} xl={4} md={6} sm={12} className="mb-4">
                 <Card className="shadow cardProject" data-aos="zoom-in">
                   <Card.Img
                     variant="top"
