@@ -49,7 +49,7 @@ export const experienceArray = [
   },
   {
     position: "Support / Technician",
-    time: "octuber 2015 - december 2020",
+    time: "october 2015 - december 2020",
     company: "ISFODOSU",
     responsibilities: [
       "Assist department staff",

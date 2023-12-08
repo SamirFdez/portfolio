@@ -17,7 +17,7 @@ export const About = () => {
                   Hello there! My name is Samir, and I am a Front-end software
                   engineer. I learned web development because I aspired to
                   possess the ability to create valuable and engaging digital
-                  content. I have a deep passion for the concept of transforming
+                  content. I'm deep passionate for the concept of transforming
                   ideas into reality and sharing them globally through the
                   Internet.
                 </p>

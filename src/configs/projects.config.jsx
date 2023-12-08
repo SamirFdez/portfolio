@@ -50,7 +50,7 @@ export const projectsArray = [
   //   ],
   // },
   {
-    name: "Todo List",
+    name: "To do List",
     image: todoList,
     description:
       "App that allows you to organize and manage your tasks efficiently. Record your pending tasks, mark completed tasks and maintain full control of your daily activities.",
@@ -90,7 +90,7 @@ export const projectsArray = [
     ],
   },
   {
-    name: "Recursos Digitales",
+    name: "Digital Resources",
     image: recursoDigitales,
     description:
       "In this project i participated in creating digital resources to support curricular development, basically it was to transform exercises from textbooks into resources in a dynamic way.",
