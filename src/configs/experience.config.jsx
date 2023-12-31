@@ -59,7 +59,7 @@ export const experienceArray = [
   },
   {
     position: "Computer Technician",
-    time: "august 2015 - octuber 2015",
+    time: "august 2015 - october 2015",
     company: "Grupo Viamar",
     responsibilities: [
       "Fix and replace hardware to all kinds of computers",
