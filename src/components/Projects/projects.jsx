@@ -36,7 +36,9 @@ export const Projects = () => {
                       </div>
                     </div>
                     <Row>
-                      <Col xs={12}>{projects.description}</Col>
+                      <Col xs={12} style={{ height: "120px" }}>
+                        {projects.description}
+                      </Col>
                       <Col
                         xs={12}
                         style={{ textAlign: "right", padding: "12px" }}
