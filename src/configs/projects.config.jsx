@@ -18,23 +18,23 @@ export const projectsArray = [
       "App that allows you to search for movies, see their reviews, among other things. The App allows you to list movies as favorites so you don't lose any information about them. The purpose of this App was for me to show my skills in using APIs.",
     stacks: [
       {
-        name: "react",
+        name: "React",
         icon: reactJs,
       },
       {
-        name: "js",
+        name: "JavaScript",
         icon: js,
       },
       {
-        name: "html",
+        name: "HTML",
         icon: html,
       },
       {
-        name: "css",
+        name: "CSS",
         icon: css,
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         icon: tailwind,
       },
     ],
@@ -58,23 +58,23 @@ export const projectsArray = [
       "App that allows you to organize and manage your tasks efficiently. Record your pending tasks, mark completed tasks and maintain full control of your daily activities.",
     stacks: [
       {
-        name: "react",
+        name: "React",
         icon: reactJs,
       },
       {
-        name: "js",
+        name: "JavaScript",
         icon: js,
       },
       {
-        name: "html",
+        name: "HTML",
         icon: html,
       },
       {
-        name: "css",
+        name: "CSS",
         icon: css,
       },
       {
-        name: "bootstrap",
+        name: "Bootstrap",
         icon: bootstrap,
       },
     ],
@@ -98,20 +98,20 @@ export const projectsArray = [
       "In this project i participated in creating digital resources to support curricular development, basically it was to transform exercises from textbooks into resources in a dynamic way.",
     stacks: [
       {
-        name: "html",
+        name: "JavaScript",
+        icon: js,
+      },
+      {
+        name: "HTML",
         icon: html,
       },
       {
-        name: "css",
+        name: "CSS",
         icon: css,
       },
       {
-        name: "bootstrap",
+        name: "Bootstrap",
         icon: bootstrap,
-      },
-      {
-        name: "js",
-        icon: js,
       },
     ],
     share: [
