@@ -66,11 +66,12 @@ body::-webkit-scrollbar-thumb {
 .navLink {
   font-size: 1.15em !important;
   color: var(--secundaryColor) !important;
+  transition-duration: 2s;
 }
 
 .navLink:hover {
   color: var(--thirdColor) !important;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .btnResume {
@@ -165,6 +166,7 @@ body::-webkit-scrollbar-thumb {
 
 .imgIcon {
   width: 2em;
+  transition-duration: 500ms;
 }
 
 .imgIcon:hover {
@@ -314,6 +316,7 @@ body::-webkit-scrollbar-thumb {
 
 .iconProject {
   width: 1.7em;
+  transition-duration: 500ms;
 }
 
 .iconProject:hover {
@@ -353,10 +356,11 @@ body::-webkit-scrollbar-thumb {
   padding: 1em;
   background-color: var(--thirdColor) !important;
   color: var(--fourthColor) !important;
+  transition-duration: 1s;
 }
 
 .cardStacks:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 .cardBody {
@@ -403,7 +407,6 @@ body::-webkit-scrollbar-thumb {
     height: 2.2em;
   }
 }
-
 
 /*--------------------------------------------------------------
 >>> Contact
@@ -524,6 +527,7 @@ body::-webkit-scrollbar-thumb {
     right: 10px;
     bottom: 10px;
   }
+
   .imgArrowUp {
     width: 35px;
     padding: 7.5px;
@@ -548,6 +552,7 @@ body::-webkit-scrollbar-thumb {
 
 .iconFooter {
   width: 1.2em;
+  transition-duration: 500ms;
 }
 
 .iconFooter:hover {
