@@ -55,6 +55,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.6em !important;
   color: var(--secundaryColor) !important;
   cursor: pointer;
+  transition: all !important;
+  transition-duration: 700ms !important;
 }
 
 .Nav {
@@ -66,7 +68,6 @@ body::-webkit-scrollbar-thumb {
 .navLink {
   font-size: 1.15em !important;
   color: var(--secundaryColor) !important;
-  transition-duration: 2s;
 }
 
 .navLink:hover {
@@ -77,6 +78,7 @@ body::-webkit-scrollbar-thumb {
 .btnResume {
   color: var(--secundaryColor) !important;
   border-color: var(--secundaryColor) !important;
+
 }
 
 .btnResume:hover {
