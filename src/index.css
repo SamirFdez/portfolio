@@ -293,13 +293,18 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 16px;
 }
 
+.colProject {
+  transition-duration: 500ms;
+}
+
+.colProject:hover {
+  transform: scale(1.05);
+
+}
+
 .cardProject {
   background-color: rgba(178, 217, 247) !important;
   height: 450px !important;
-}
-
-.cardProject:hover {
-  transform: scale(1.02);
 }
 
 .imgProject {
