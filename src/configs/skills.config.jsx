@@ -2,6 +2,7 @@ import html from "../assets/icons/html-5.svg";
 import css from "../assets/icons/css-3.svg";
 import sass from "../assets/icons/sass.svg";
 import js from "../assets/icons/javascript.svg";
+import ts from "../assets/icons/typescript.svg";
 import reactJs from "../assets/icons/react.svg";
 import vite from "../assets/icons/vite.svg";
 import bootstrap from "../assets/icons/bootstrap.svg";
@@ -45,6 +46,10 @@ export const stacks = [
       {
         name: "JavaScript",
         icon: js,
+      },
+      {
+        name: "TypeScript",
+        icon: ts,
       },
       {
         name: "React JS",
