@@ -48,7 +48,7 @@ export const stacks = [
         icon: js,
       },
       {
-        name: "TypeScript",
+        name: "",
         icon: ts,
       },
       {
