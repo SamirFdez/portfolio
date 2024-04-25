@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { navLinks } from "../../configs/navbar.config";
+import CVSamirFernandez from "../../assets/docs/CV-Samir-Fernandez.pdf";
 
 export const NavbarMenu = () => {
-  const [offset, setOffset] = useState(0);
   const [expanded, setExpanded] = useState(false);
 
   const closeNav = () => {
@@ -16,8 +16,12 @@ export const NavbarMenu = () => {
     if (section) {
       const offsetTop = section.offsetTop - 60;
       window.scrollTo({ top: offsetTop, behavior: "smooth" });
-      setOffset(offsetTop);
     }
+  };
+
+  const openPDF = () => {
+    const PDF = CVSamirFernandez;
+    window.open(PDF, "_blank");
   };
 
   return (
@@ -52,7 +56,7 @@ export const NavbarMenu = () => {
                 <Button
                   variant="outline-dark"
                   className="btnResume"
-                  onClick={closeNav}
+                  onClick={openPDF}
                 >
                   Resume
                 </Button>
