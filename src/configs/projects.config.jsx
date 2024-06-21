@@ -6,11 +6,52 @@ import tailwind from "../assets/icons/tailwindcss-icon.svg";
 import bootstrap from "../assets/icons/bootstrap.svg";
 import iconGithub from "../assets/images/iconGithub.png";
 import iconWeb from "../assets/images/iconWeb.png";
+import connectifyChat from "../assets/projects/connectifyChat.png";
 import movieWorld from "../assets/projects/movieWorld.png";
 import todoList from "../assets/projects/todoList.jpg";
 import recursoDigitales from "../assets/projects/recursoDigitales.png";
 
 export const projectsArray = [
+  {
+    name: "Connectify Chat",
+    image: connectifyChat,
+    description:
+      "I developed a global chat application that allows users to choose a username and custom avatar. Users can join a global chat and send messages in real time via web sockets, enjoying a modern and responsive user interface that ensures an optimal experience on any device.",
+    stacks: [
+      {
+        name: "React",
+        icon: reactJs,
+      },
+      {
+        name: "JavaScript",
+        icon: js,
+      },
+      {
+        name: "HTML",
+        icon: html,
+      },
+      {
+        name: "CSS",
+        icon: css,
+      },
+      {
+        name: "Tailwind",
+        icon: tailwind,
+      },
+    ],
+    share: [
+      {
+        platform: "web",
+        icon: iconWeb,
+        link: "https://movieworld-samirfdez.vercel.app/",
+      },
+      {
+        platform: "gitHub",
+        icon: iconGithub,
+        link: "https://github.com/SamirFdez/Connectify-Chat",
+      },
+    ],
+  },
   {
     name: "Movie World",
     image: movieWorld,
