@@ -14,35 +14,34 @@ export const Projects = () => {
             {projectsArray.map((projects, index) => (
               <Col
                 key={index}
-                xl={4}
                 md={6}
                 sm={12}
                 className="mb-4 colProject"
+                data-aos="zoom-in"
               >
-                <Card className="shadow cardProject" data-aos="zoom-in">
-                  <Card.Img
-                    variant="top"
-                    src={projects.image}
-                    className="imgProject p-3 pb-0"
-                  />
+                <Card className="shadow cardProject">
                   <Card.Body>
-                    <div className="card-title d-flex align-items-center justify-content-between">
-                      <div>
-                        <h5>{projects.name}</h5>
-                      </div>
-                      <div>
-                        {projects.stacks.map((stacks, index) => (
-                          <img
-                            src={stacks.icon}
-                            className="ms-2 stackProject"
-                            key={index}
-                            title={stacks.name}
-                          />
-                        ))}
-                      </div>
+                    <div>
+                      <h4>{projects.name}</h4>
+                    </div>
+                    <Card.Img
+                      variant="top"
+                      src={projects.image}
+                      className="imgProject pb-3"
+                    />
+
+                    <div className="card-title d-flex align-items-center">
+                      {projects.stacks.map((stacks, index) => (
+                        <img
+                          src={stacks.icon}
+                          className="me-2 stackProject"
+                          key={index}
+                          title={stacks.name}
+                        />
+                      ))}
                     </div>
                     <Row>
-                      <Col xs={12} style={{ height: "120px" }}>
+                      <Col xs={12} className="descriptionProject">
                         {projects.description}
                       </Col>
                       <Col

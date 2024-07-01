@@ -282,7 +282,8 @@ body::-webkit-scrollbar-thumb {
 
 .projects {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  margin-top: 240px;
 }
 
 .projects h2 {
@@ -304,12 +305,11 @@ body::-webkit-scrollbar-thumb {
 
 .cardProject {
   background-color: rgba(178, 217, 247) !important;
-  height: 450px !important;
 }
 
 .imgProject {
   object-fit: cover;
-  height: 205px !important;
+  height: 305px !important;
 }
 
 .stackProject {
@@ -319,6 +319,10 @@ body::-webkit-scrollbar-thumb {
 
 .stackProject:hover {
   width: 1.4em;
+}
+
+.descriptionProject {
+  height: 140px;
 }
 
 .iconProject {
@@ -334,6 +338,14 @@ body::-webkit-scrollbar-thumb {
   .projects {
     height: auto;
     margin-bottom: 48px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .descriptionProject {
+    height: auto;
   }
 }
 
