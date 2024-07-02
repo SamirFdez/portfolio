@@ -9,6 +9,7 @@ import bootstrap from "../assets/icons/bootstrap.svg";
 
 // backEnd icons
 import nodeJs from "../assets/icons/nodejs-icon.svg";
+import express from "../assets/icons/express-icon.svg";
 import mongoDB from "../assets/icons/mongo.svg";
 
 // general icons
@@ -55,6 +56,10 @@ export const projectsArray = [
       {
         name: "Node JS",
         icon: nodeJs,
+      },
+      {
+        name: "Expres JS",
+        icon: express,
       },
       {
         name: "Mongo DB",
