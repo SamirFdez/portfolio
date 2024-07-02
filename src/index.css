@@ -313,20 +313,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .stackProject {
-  width: 1.4em;
-  height: 1.4em;
+  width: 1.5em;
+  height: 1.5em;
+  transition-duration: 500ms;
+
 }
 
 .stackProject:hover {
-  width: 1.4em;
+  width: 1.8em;
 }
 
 .descriptionProject {
-  height: 140px;
+  height: 110px;
 }
 
 .iconProject {
-  width: 1.7em;
+  width: 1.6em;
   transition-duration: 500ms;
 }
 
@@ -334,11 +336,26 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 
+.textProject {
+  transition-duration: 500ms;
+}
+
+.textProject:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (max-width: 1200px) {
   .projects {
     height: auto;
     margin-bottom: 48px;
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .descriptionProject {
+    height: 170px;
   }
 }
 

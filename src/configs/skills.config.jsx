@@ -10,8 +10,9 @@ import tailwind from "../assets/icons/tailwindcss-icon.svg";
 
 import nodeJs from "../assets/icons/nodejs-icon.svg";
 import express from "../assets/icons/express.svg";
-import sqlServer from "../assets/icons/sql-server.svg";
 import mongoDB from "../assets/icons/mongo.svg";
+import mySQL from "../assets/icons/mysql.svg"
+import sqlServer from "../assets/icons/sql-server.svg";
 import postgreSQL from "../assets/icons/postgresql.svg";
 import postman from "../assets/icons/postman.svg";
 
@@ -69,13 +70,18 @@ export const stacks = [
         icon: express,
       },
       {
-        name: "SQL Server",
-        icon: sqlServer,
-      },
-      {
         name: "MongoDB",
         icon: mongoDB,
       },
+      {
+        name: "MySQL",
+        icon: mySQL,
+      },
+      {
+        name: "SQL Server",
+        icon: sqlServer,
+      },
+
       {
         name: "PostgreSQL",
         icon: postgreSQL,
