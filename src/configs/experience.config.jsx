@@ -18,8 +18,20 @@ export const educationArray = [
 
 export const experienceArray = [
   {
+    position: "Software Developer",
+    time: "july 2024 - present",
+    company: "VIVA - Trilogy Dominicana",
+    responsibilities: [
+      "Programming of the solutions complying with the specifications of the functional and technical scope",
+      "Document the source code prepared according to the guidelines provided by the manager",
+      "Internal testing of the developed solutions and preparation of deliverables for quality testing",
+      "Coordination with the quality control team, review, and adjustments of the developed solutions.",
+      "Preparation of scripts and source code for the production deployment",
+    ],
+  },
+  {
     position: "Frontend Developer",
-    time: "june 2023 - present",
+    time: "june 2023 - july 2024",
     company: "Signos Framework",
     responsibilities: [
       "Web systems design and coding",
