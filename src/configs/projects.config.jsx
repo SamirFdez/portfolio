@@ -17,12 +17,53 @@ import iconGithub from "../assets/images/iconGithub.png";
 import iconWeb from "../assets/images/iconWeb.png";
 
 // projects images
+import pasameWebsite from "../assets/projects/pasame-website.png";
 import connectifyChat from "../assets/projects/connectifyChat.png";
 import movieWorld from "../assets/projects/movieWorld.png";
 import todoList from "../assets/projects/todoList.jpg";
 import recursoDigitales from "../assets/projects/recursoDigitales.png";
 
 export const projectsArray = [
+    {
+    name: "Pásame Website",
+    image: pasameWebsite,
+    description:
+      "Website developed for Pásame App, a mobile app focused on facilitating payments between users.",
+    stacks: [
+      {
+        name: "HTML",
+        icon: html,
+      },
+      {
+        name: "CSS",
+        icon: css,
+      },
+      {
+        name: "JavaScript",
+        icon: js,
+      },
+      {
+        name: "React",
+        icon: reactJs,
+      },
+      {
+        name: "Tailwind",
+        icon: tailwind,
+      },
+    ],
+    share: [
+      {
+        platform: "VISIT WEBSITE",
+        icon: iconWeb,
+        link: "https://pasame-website.vercel.app/",
+      },
+      {
+        platform: "SOURCE CODE",
+        icon: iconGithub,
+        link: "https://github.com/SamirFdez",
+      },
+    ],
+  },
   {
     name: "Connectify Chat",
     image: connectifyChat,
