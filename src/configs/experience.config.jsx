@@ -2,7 +2,7 @@ export const educationArray = [
   {
     institution: "Universidad APEC",
     course: "Ingeniería en Software",
-    time: "2019 - present",
+    time: "2019 - 2025",
   },
   {
     institution: "Instituto Tecnológico de Las Américas",
